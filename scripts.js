@@ -261,12 +261,12 @@ class Ball {
         if (!this.falling) {
             return false;
         }
-        if (selectedBall.ballDomElement.getBoundingClientRect().y >= this.ballToY) {
+        if (this.ballDomElement.getBoundingClientRect().y >= this.ballToY) {
             this.falling = false;
             return false;
         }
-        selectedBall.positionY += 10;
-        selectedBall.ballDomElement.style.transform = `translate(-50%, calc(-50% + ${selectedBall.positionY}px))`;
+        this.positionY += 10;
+        this.ballDomElement.style.transform = `translate(-50%, calc(-50% + ${this.positionY}px))`;
         return true;
     }
 

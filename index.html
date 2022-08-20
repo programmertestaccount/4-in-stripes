@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="game-container">
-        <div>
-            <div class="player-dashboard">
-                <h1>Players</h1>
-                <div class="player player-1 active">Player 1</div>
-                <br>
-                <div class="player player-2">Bot 2</div>
-            </div>
+      <div>
+        <div class="player-dashboard">
+          <h1>Players</h1>
+          <div class="player player-1 active">Player 1</div>
+          <br />
+          <div class="player player-2">Bot 2</div>
         </div>
-        <div id="board">
-            <div class="cell-header cell-header-1" data-columns="1"></div>
-            <div class="cell-header cell-header-2" data-columns="2"></div>
-            <div class="cell-header cell-header-3" data-columns="3"></div>
-            <div class="cell-header cell-header-4" data-columns="4"></div>
-            <div class="cell-header cell-header-5" data-columns="5"></div>
-            <div class="cell-header cell-header-6" data-columns="6"></div>
-            <div class="cell-header cell-header-7" data-columns="7"></div>
-        </div>
-        <div>
-
-        </div>
+      </div>
+      <div id="board">
+        <div class="cell-header cell-header-1" data-columns="1"></div>
+        <div class="cell-header cell-header-2" data-columns="2"></div>
+        <div class="cell-header cell-header-3" data-columns="3"></div>
+        <div class="cell-header cell-header-4" data-columns="4"></div>
+        <div class="cell-header cell-header-5" data-columns="5"></div>
+        <div class="cell-header cell-header-6" data-columns="6"></div>
+        <div class="cell-header cell-header-7" data-columns="7"></div>
+      </div>
+      <div></div>
     </div>
-    <script src="./scripts.js"></script>
-</body>
 
+    <script src="ball.js" type="module"></script>
+    <script src="scripts.js" type="module"></script>
+  </body>
 </html>
